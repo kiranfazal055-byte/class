@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classter - College Management System</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/adminlte.min.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15/css/all.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+    <!-- Top Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <img src="https://via.placeholder.com/40" class="img-circle elevation-2" alt="User" style="width: 40px;">
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <a href="/" class="brand-link text-center">
+            <span class="brand-text font-weight-light"><strong>Classter</strong></span>
+        </a>
+        <div class="sidebar">
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+                    <li class="nav-header">MANAGEMENT</li>
+                    <li class="nav-item"><a href="/academics/students/" class="nav-link"><i class="nav-icon fas fa-user-graduate"></i><p>Students</p></a></li>
+                    <li class="nav-item"><a href="/academics/teachers/" class="nav-link"><i class="nav-icon fas fa-chalkboard-teacher"></i><p>Educators</p></a></li>
+                    <li class="nav-item"><a href="/academics/exams/" class="nav-link"><i class="nav-icon fas fa-file-alt"></i><p>Exams & Quizzes</p></a></li>
+                    <li class="nav-item"><a href="/admin/" class="nav-link"><i class="nav-icon fas fa-cogs"></i><p>Admin Panel</p></a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Content -->
+    <div class="content-wrapper">
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6"><h1>Dashboard</h1></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container-fluid">
+                <!-- Stats Cards -->
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div class="small-box bg-danger">
+                            <div class="inner">
+                                <h3>410</h3>
+                                <p>Students</p>
+                            </div>
+                            <div class="icon"><i class="ion ion-ios-people"></i></div>
+                            <a href="/academics/students/" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="small-box bg-info">
+                            <div class="inner">
+                                <h3>64</h3>
+                                <p>Classes</p>
+                            </div>
+                            <div class="icon"><i class="ion ion-ios-book"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="small-box bg-success">
+                            <div class="inner">
+                                <h3>45</h3>
+                                <p>Educators</p>
+                            </div>
+                            <div class="icon"><i class="ion ion-ios-person"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-danger">
+                                <h3 class="card-title text-white">Welcome to Your College Management System</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Your system is ready! Add data in the admin panel and come back here to see live stats, calendar, and charts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'js/adminlte.min.js' %}"></script>
+</body>
+</html>
